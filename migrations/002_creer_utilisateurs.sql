@@ -1,0 +1,9 @@
+CREATE TABLE utilisateurs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom TEXT NOT NULL,
+    prenom TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE COLLATE NOCASE,
+    telephone TEXT NOT NULL,
+    mot_de_passe TEXT NOT NULL,
+    date_creation TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

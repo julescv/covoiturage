@@ -1,0 +1,219 @@
+/* Présentation commune adaptée du projet MVC de référence. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f8fafc;
+    overflow-wrap: anywhere;
+}
+
+header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 1.25rem;
+}
+
+.brand {
+    margin-bottom: 1rem;
+}
+
+.brand-title {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.subtitle {
+    margin: 0.25rem 0 0;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #475569;
+    background-color: #e2e8f0;
+}
+
+.nav-bar a:hover {
+    background-color: #cbd5e1;
+    color: #0f172a;
+}
+
+.nav-bar a.active {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+a:focus-visible {
+    outline: 3px solid #1d4ed8;
+    outline-offset: 4px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #1e293b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.alert p {
+    margin: 0;
+}
+
+.alert-success {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+}
+
+.alert-error {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+}
+
+.alert-error strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.alert ul {
+    margin: 0 0 0 1.25rem;
+    padding: 0;
+}
+
+.alert li {
+    margin-bottom: 0.25rem;
+}
+
+.form-notice {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.form-group .form-text {
+    display: block;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 0.35rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #1e293b;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.champ-obligatoire {
+    color: #dc2626;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.error-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.error-code {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #b91c1c;
+    line-height: 1;
+}
+
+.error-card code {
+    background-color: #f1f5f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #0f172a;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+
+    .error-card {
+        padding: 1.25rem;
+    }
+}
